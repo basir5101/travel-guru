@@ -1,3 +1,9 @@
+#root{
+    background-image: linear-gradient(rgb(80, 80, 66), rgb(26, 58, 26));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .travel-form{
     background-color: rgb(217, 217, 243);
     padding: 30px;
@@ -6,12 +12,36 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px;
 }
+.travel-form label{
+    margin: 0;
+    padding: 0;
+}
 .travel-form input{
     width: 100%;
     border: none;
     border-bottom: 1px solid black;
-    padding: 10px;
-    background: none;
-    margin: 5px;
+    padding: 10px 10px 10px 10px;
+    background: rgb(189, 219, 231);
+    margin: 0px 5px 20px 5px;
     outline: none;
+}
+.googleSignIn{
+    padding: 10px 30px;
+    border: 1px solid white;
+    color: white;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+.googleSignIn img{
+    height: 40px;
+    margin: 0;
+    display: block;
+    padding: 0 10px;
+}
+.googleSignIn p{
+    margin: 0;
+    padding: 0;
+    display: block;
 }

@@ -2,7 +2,7 @@ var fakeData = [
     {
         name: 'Sajek',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora provident doloremque aut tempore incidunt eligendi culpa voluptatem deleniti id voluptas possimus perferendis ea ratione ut, nulla dignissimos saepe, sapiente vel?',
-        picture: 'https://i.imgur.com/TzfqiPD.png',
+        picture: 'https://i.imgur.com/TzfqiPDs.png',
         id: 1
     },
     {

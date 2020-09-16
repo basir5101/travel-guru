@@ -8,13 +8,13 @@ const TravelInfo = () => {
     const placeDetails = fakeData.filter(place => place.id == placeId);
     
     return (
-        <div className = 'd-flex'>
-            <div>
+        <div className = 'row'>
+            <div className = 'col-sm-5 p-4 m-4'>
                 {
                     placeDetails.map(place =>{
-                        return <div>
+                        return <div key = {place.id} className = 'text-white w-75'>
                                 <h3>{place.name}</h3>
-                                {/* <Image style = {{height: '400px'}} src= {place.picture} fluid /> */}
+                                <p>{place.description}</p>
                             </div>
                     })
                 }

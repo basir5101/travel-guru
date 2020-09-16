@@ -4,19 +4,25 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar className = 'bg-success' expand="md">
+            <Navbar.Brand href="/">
+                <img style ={{height: '80px'}} src="https://i.imgur.com/3MY6Ogr.png?1" alt="travel guru"/>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Collapse id="basic-navbar-nav" className = 'd-flex justify-content-between'>
             <Form inline>
                 <FormControl type="text" placeholder="Search Your Destination.." className="mr-sm-2" />
-                <Button variant="outline-success">Search</Button>
-                </Form>
-                <Nav className="mr-auto">
-                <Link to ='/' className = 'nav-link'>
+                <Button variant="success">Search</Button>
+            </Form>
+                <Nav className="ml-auto align-items-center m-4">
+                <Link to ='/' className = 'nav-link text-white'>
                     Home
                 </Link>
-                <Nav.Link href="#link">Link</Nav.Link>
+                <Nav.Link className = 'text-white' href="#link">News</Nav.Link>
+                <Nav.Link className = 'text-white' href="#link">Destination</Nav.Link>
+                <Nav.Link className = 'text-white' href="#link">Blog</Nav.Link>
+                <Nav.Link href="/login"><Button variant="warning">Login</Button> </Nav.Link>
+
                 </Nav>                
             </Navbar.Collapse>
         </Navbar>
