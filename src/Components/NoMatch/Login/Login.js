@@ -181,10 +181,10 @@ const Login = () => {
                 <div className = 'text-center'>
               
                <p className="text-center text-danger"> {user.error} </p>
-               <p className = 'text-center text-success'>Please fill out all the field Correctly</p>
-                <div>
+               <p className = 'text-center text-danger'>Please fill out all the field Correctly</p>
+                <div className = 'account-existence'>
                     {
-                        user.newUser ? <button onClick = {toggleCondition}>Already Have An Acount</button> : <button onClick = {toggleCondition}>Crate new Account</button>
+                        user.newUser ? <button onClick = {toggleCondition}>Already Have An Account ?</button> : <button onClick = {toggleCondition}>Crate new Account</button>
                     }
                 </div>
                 </div>
@@ -201,7 +201,6 @@ const Login = () => {
                             <p>Sign In With facebook</p>
                         </div>
                     </div>
-                    {/* <Button onClick = {facebookSignIn} variant = 'warning' >Sign In With facebook</Button> */}
         </div>
     );
 };

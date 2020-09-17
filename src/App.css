@@ -45,3 +45,15 @@
     padding: 0;
     display: block;
 }
+.account-existence button{
+    border: none;
+    background-image: linear-gradient(45deg, #11117a, #999946);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    outline: none;
+}
+.account-existence button:active{
+    background: blue;
+    outline: none;
+}

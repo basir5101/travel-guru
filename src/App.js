@@ -15,7 +15,7 @@ import BookingInfo from './Components/NoMatch/BookingInfo/BookingInfo';
 import PrivateRoute from './Components/NoMatch/PrivateRoute/PrivateRoute';
 
 
-export const UserContext = createContext();
+export const UserContext = createContext()
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({
     isLogged: false

@@ -6,13 +6,12 @@ const Header = () => {
     return (
         <Navbar className = 'bg-success' expand="md">
             <Navbar.Brand href="/">
-                <img style ={{height: '80px'}} src="https://i.imgur.com/3MY6Ogr.png?1" alt="travel guru"/>
+                <img style ={{height: '50px'}} src="https://i.imgur.com/3MY6Ogr.png?1" alt="travel guru"/>
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className = 'd-flex justify-content-between'>
             <Form inline>
                 <FormControl type="text" placeholder="Search Your Destination.." className="mr-sm-2" />
-                <Button variant="success">Search</Button>
+                <Button variant="primary">Search</Button>
             </Form>
                 <Nav className="ml-auto align-items-center m-4">
                 <Link to ='/' className = 'nav-link text-white'>
