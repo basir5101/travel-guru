@@ -43,6 +43,9 @@ const Login = () => {
             const newUser = {...user};
             newUser[e.target.name] = e.target.value;
             setUser(newUser);
+            const userInfo = {...loggedInUser};
+            userInfo[e.target.name] = e.target.value;
+            setLoggedInUser(userInfo);
         }
         if(e.target.name === 'password'){
             const isPasswordValid = e.target.value.length >= 6;

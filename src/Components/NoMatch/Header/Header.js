@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, Form, FormControl, Nav, Navbar} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../../App';
 
 const Header = () => {
+    const [loggedInUser] = useContext(UserContext);
     return (
         <Navbar className = 'bg-success' expand="md">
             <Navbar.Brand href="/">
@@ -17,11 +19,7 @@ const Header = () => {
                 <Link to ='/' className = 'nav-link text-white'>
                     Home
                 </Link>
-                <Nav.Link className = 'text-white' href="#link">News</Nav.Link>
-                <Nav.Link className = 'text-white' href="#link">Destination</Nav.Link>
-                <Nav.Link className = 'text-white' href="#link">Blog</Nav.Link>
-                <Nav.Link href="/login"><Button variant="warning">Login</Button> </Nav.Link>
-
+                <Nav.Link href="/login"><Button variant="warning"> {loggedInUser.isLogged ? 'Sign Out' : 'Log In'} </Button> </Nav.Link>
                 </Nav>                
             </Navbar.Collapse>
         </Navbar>
