@@ -8,62 +8,18 @@ const MapContainer = () => {
         width: "100%"};
       
       const defaultCenter = {
-        lat: 41.3851, lng: 2.1734
+        lat: 23.6850, lng: 90.3563
       }
-      const locations = [
-        {
-          name: "Location 1",
-          location: { 
-            lat: 41.3954,
-            lng: 2.162 
-          },
-        },
-        {
-          name: "Location 2",
-          location: { 
-            lat: 41.3917,
-            lng: 2.1649
-          },
-        },
-        {
-          name: "Location 3",
-          location: { 
-            lat: 41.3773,
-            lng: 2.1585
-          },
-        },
-        {
-          name: "Location 4",
-          location: { 
-            lat: 41.3797,
-            lng: 2.1682
-          },
-        },
-        {
-          name: "Location 5",
-          location: { 
-            lat: 41.4055,
-            lng: 2.1915
-          },
-        }
-      ];
 
     return(
         <LoadScript
-            googleMapsApiKey='AIzaSyB6xHfPLxTArJQQzUVAs2EV6CZG6UT9HCU'>
+            googleMapsApiKey='AIzaSyAyesbQMyKVVbBgKVi2g6VX7mop2z96jBo'>
             <GoogleMap
             mapContainerStyle={mapStyles}
-            zoom={13}
+            zoom={8}
             center={defaultCenter}
             
             />       
-            {
-            locations.map(item => {
-              return (
-              <Marker key={item.name} position={item.location}/>
-              )
-            })
-         }     
         </LoadScript>
     )
 }

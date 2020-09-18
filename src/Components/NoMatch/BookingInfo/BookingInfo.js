@@ -14,7 +14,6 @@ const BookingInfo = () => {
                         <li className="list-group-item">Starting Travel: <strong> {loggedInUser.starting} </strong></li>
                         <li className="list-group-item">Ending Travel: <strong> {loggedInUser.ending} </strong></li>
                     </ul>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti molestias perspiciatis deleniti iste veniam nihil sapiente, voluptas a delectus magni, nulla earum ad, officia obcaecati quam odit odio commodi adipisci.</p>
             </div>
             <div className = 'col-sm-5 m-4 p-4'>
                 <MapContainer></MapContainer>
