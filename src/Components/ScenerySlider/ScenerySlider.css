@@ -1,0 +1,8 @@
+.heading{
+    background-color: rgba(247, 152, 9, 0.3);
+}
+.heading span{
+    color: #0513d4;
+    font-weight: 600;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,34 @@
+
+.googleSignIn{
+    padding: 10px 30px;
+    border: 2px solid #0513d4;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    color: #0513d4;
+    font-weight: bold;
+}
+.googleSignIn img{
+    height: 40px;
+    margin: 0;
+    display: block;
+    padding: 0 10px;
+}
+.googleSignIn p{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.account-existence button{
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    outline: none;
+    outline: none;
+}
+.account-existence button:active{
+    background: none;
+    outline: none;
+}

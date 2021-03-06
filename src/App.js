@@ -6,13 +6,14 @@ import {
   Route,
 } from "react-router-dom";
 import NoMatch from './Components/NoMatch/NoMatch';
-import Home from './Components/NoMatch/Home/Home';
-import Header from './Components/NoMatch/Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import TravelInfo from './Components/NoMatch/TravelInfo/TravelInfo';
-import Login from './Components/NoMatch/Login/Login';
-import BookingInfo from './Components/NoMatch/BookingInfo/BookingInfo';
-import PrivateRoute from './Components/NoMatch/PrivateRoute/PrivateRoute';
+import BookingInfo from './Components/BookingInfo/BookingInfo';
+import Header from './Components/Header/Header';
+import Home from './pages/Home';
+import Login from './Components/Login/Login';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import TravelInfo from './Components/TravelInfo/TravelInfo';
+import Footer from './Components/Footer/Footer';
 
 
 export const UserContext = createContext()
@@ -21,26 +22,27 @@ function App() {
     isLogged: false
   })
   return (
-    <UserContext.Provider value = { [loggedInUser, setLoggedInUser]}>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
-        <Header></Header>
+        <Header />
         <Switch>
-          <Route exact path = '/'>
-            <Home></Home>
+          <Route exact path='/'>
+            <Home />
           </Route>
-          <Route path = '/travel-info/:placeId'>
-            <TravelInfo></TravelInfo>
+          <Route path='/travel-info/:placeId'>
+            <TravelInfo />
           </Route>
-          <Route path = '/login'>
-            <Login></Login>
+          <Route path='/login'>
+            <Login />
           </Route>
-          <PrivateRoute path = '/booking-info'>
-            <BookingInfo></BookingInfo>
+          <PrivateRoute path='/booking-info'>
+            <BookingInfo />
           </PrivateRoute>
-          <Route path = '*'>
+          <Route path='*'>
             <NoMatch></NoMatch>
           </Route>
-        </Switch>    
+        </Switch>
+        <Footer />
       </Router>
     </UserContext.Provider>
   );

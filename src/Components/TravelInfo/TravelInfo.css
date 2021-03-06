@@ -1,0 +1,33 @@
+.travel-form{
+    background-color: rgba(247, 184, 9, 0.6);
+    box-shadow: 0px 0px 5px 1px rgba(238, 198, 137, 0.6);
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px;
+}
+.travel-form label{
+    font-weight: 700;
+    margin-left: 5px;
+    margin-bottom: 0;
+    padding: 0;
+}
+.travel-form input{
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #0513d4;
+    padding: 10px;
+    margin: 0px 5px 20px 5px;
+    outline: none;
+    border-radius: 5px;
+    background: rgba(92, 81, 21, 0.3);
+    color: white;
+    font-size: 18px; 
+}
+::placeholder{
+    color: white;
+}
+.travel-form button{
+    background-color: #0513d4;
+    color: white;
+}
