@@ -13,7 +13,7 @@ const Places = () => {
                 {
                     fakeData.map(place => {
                         return <div className='col-sm-4' key={place.id} >
-                            <div className='place pb-4'>
+                            <div className='place pb-4 border'>
                                 <Link to={`/travel-info/${place.id}`} >
                                     <h2 className='my-5'> {place.name} </h2>
                                     <img className='w-100' src={sceneryImg} alt="" />

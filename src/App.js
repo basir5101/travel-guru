@@ -39,7 +39,7 @@ function App() {
             <BookingInfo />
           </PrivateRoute>
           <Route path='*'>
-            <NoMatch></NoMatch>
+            <NoMatch />
           </Route>
         </Switch>
         <Footer />

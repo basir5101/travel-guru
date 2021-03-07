@@ -1,11 +1,11 @@
 import React from 'react';
-import { Facebook, Linkedin, PhoneCall, Twitter } from 'react-feather';
+import { AtSign, Facebook, Linkedin, Twitter } from 'react-feather';
 import logo from '../../images/logo.svg';
 import './Footer.css';
 
 const Footer = () => {
     return (
-        <footer className='container-fluid footer mx-auto text-white pt-4 pb-5'>
+        <footer className='container-fluid footer mx-auto text-white pt-4 pb-1'>
             <div className='row'>
                 <div className="col-md-3 mb-md-0 mb-5">
                     <div>
@@ -14,10 +14,10 @@ const Footer = () => {
                         </div>
                         <div className="d-flex justify-content-md-center">
                             <div>
-                                <Facebook color={'white'} className='m-2' />
-                                <Twitter color={'white'} className='m-2' />
-                                <Linkedin color={'white'} className='m-2' />
-                                <PhoneCall color={'white'} className='m-2' />
+                                <a href='https://facebook.com/basir5101/' rel="noopener noreferrer" target='_blank'> <Facebook color={'white'} /></a>
+                                <a href='https://twitter.com/basir5101' rel="noopener noreferrer" target='_blank'> <Twitter color={'green'} /></a>
+                                <a href='https://www.linkedin.com/in/abdul-basir-b087971b1/' rel="noopener noreferrer" target='_blank'> <Linkedin color={'white'} /></a>
+                                <a href="mailto:basir.bsmrstu@gmail.com" rel="noopener noreferrer" target='_blank'> <AtSign color={'pink'} /></a>
                             </div>
                         </div>
                     </div>

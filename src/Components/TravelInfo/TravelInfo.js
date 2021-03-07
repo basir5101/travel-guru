@@ -21,14 +21,14 @@ const TravelInfo = () => {
         console.log(loggedInUser);
     }
     return (
-        <div className='row'>
-            <div className='col-sm-5 p-4 m-4'>
+        <div className='row container mx-auto'>
+            <div className='col-md-6 p-4'>
                 <div key={id} className='w-75'>
                     <h3 style={{ color: '#0513d4' }}>{name}</h3>
                     <p>{longDescription}</p>
                 </div>
             </div>
-            <div>
+            <div className='col-md-6'>
                 <form className='travel-form'>
                     <label htmlFor="origin">Origin: </label>
                     <input type="text" name="origin" placeholder='Your Origin' onChange={handleBlur} required />
