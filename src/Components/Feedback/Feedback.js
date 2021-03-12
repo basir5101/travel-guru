@@ -21,7 +21,7 @@ const Feedback = () => {
                 padding: '30px'
             }} > Some of Our Happy Customers </h3>
             <div className='row'>
-                {users &&
+                {users ?
                     users.map(user => (
                         <div className='col-6 col-sm-4'>
                             <div className='border m-1 p-3'>
@@ -34,7 +34,8 @@ const Feedback = () => {
                                 </div>
                             </div>
                         </div>
-                    ))
+                    )) :
+                    <div className='mt-3 text-center'><p><strong>Loading.....</strong></p></div>
                 }
             </div>
         </div>
